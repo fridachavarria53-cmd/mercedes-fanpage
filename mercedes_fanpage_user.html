@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mercedes-Benz | Perfil de Empresa</title>
+<style>
+  :root{
+    --mbz-black:#000000;
+    --mbz-dark:#0e0e10;
+    --mbz-gray:#f4f6f8;
+    --mbz-blue:#004d80;
+    --mbz-accent:#00a0ff;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;
+            color:#222;background:var(--mbz-gray);}
+  a{color:var(--mbz-accent);text-decoration:none}
+  header.hero{
+    background:linear-gradient(120deg, #0a0a0a 0%, #151923 60%), url('') center/cover no-repeat;
+    color:#fff; padding:70px 24px 56px; text-align:center;
+  }
+  .brand{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap}
+  .brand-circle{width:56px;height:56px;border:2px solid #fff;border-radius:50%}
+  nav{
+    position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid #e6e8eb
+  }
+  nav .wrap{max-width:1100px;margin:auto;display:flex;gap:14px;align-items:center;justify-content:space-between;padding:10px 16px}
+  nav ul{list-style:none;margin:0;padding:0;display:flex;gap:14px;flex-wrap:wrap}
+  nav a{padding:8px 10px;border-radius:8px;color:#111}
+  nav a:hover{background:#eef6ff}
+  .wrap{max-width:1100px;margin:auto;padding:24px}
+  section.card{
+    background:#fff;border:1px solid #eceff3;border-radius:14px;padding:22px;margin:18px 0;
+    box-shadow:0 6px 18px rgba(15,19,28,.06);
+  }
+  h2{margin:0 0 10px 0;color:var(--mbz-blue)}
+  .kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+  .kpi div{background:#f9fbff;border:1px dashed #d8e6ff;border-radius:10px;padding:14px}
+  .pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+  .pillars article{background:#f7f7f7;border-radius:12px;padding:14px;border:1px solid #ededed}
+  /* Responsive table */
+  .table-wrap{overflow:auto;border:1px solid #e7e7ea;border-radius:12px}
+  table{width:100%;border-collapse:collapse;min-width:820px;background:#fff}
+  thead{background:#0f131c;color:#fff}
+  th,td{padding:10px 12px;text-align:left;border-bottom:1px solid #edf0f4}
+  tbody tr:nth-child(even){background:#fbfcfe}
+  .badge{display:inline-block;padding:.22rem .5rem;border-radius:999px;background:#eef6ff;color:#0a3e6b;font-size:.8rem}
+  footer{padding:28px;text-align:center;color:#666}
+  .note{font-size:.9rem;color:#555}
+</style>
+</head>
+<body>
+
+<header class="hero" id="inicio">
+  <div class="brand">
+    <div class="brand-circle" aria-hidden="true"></div>
+    <h1 style="margin:0;font-weight:700">Mercedes-Benz Group AG</h1>
+  </div>
+  <p style="opacity:.9;margin-top:10px">Descripción general, misión, visión, pilares y mezcla de mercadeo.</p>
+</header>
+
+<nav>
+  <div class="wrap">
+    <ul>
+      <li><a href="#descripcion">Descripción</a></li>
+      <li><a href="#mision">Misión</a></li>
+      <li><a href="#vision">Visión</a></li>
+      <li><a href="#pilares">Pilares</a></li>
+      <li><a href="#portafolio">Portafolio</a></li>
+      <li><a href="#necesidades">Necesidades que cubre</a></li>
+    </ul>
+    <span class="badge">Proyecto académico</span>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <section id="descripcion" class="card">
+    <h2>Descripción general</h2>
+    <p>Mercedes-Benz Group AG es uno de los fabricantes automotrices más exitosos del mundo. 
+    La empresa se enfoca en autos de pasajeros de alta gama y furgonetas de lujo, mientras que su división 
+    <em>Mercedes-Benz Mobility AG</em> ofrece servicios financieros y de movilidad como financiamiento, 
+    leasing, suscripción de vehículos, seguros y gestión de flotas. Lidera la transformación hacia un futuro 
+    totalmente eléctrico y orientado por software, con fuerte énfasis en conectividad inteligente y conducción autónoma.</p>
+    <div class="kpi">
+      <div><strong>Enfoque</strong><br>Autos premium, furgonetas de lujo</div>
+      <div><strong>Movilidad</strong><br>Financiamiento, leasing, seguros, suscripción</div>
+      <div><strong>Transformación</strong><br>Electromovilidad + software + autonomía</div>
+    </div>
+  </section>
+
+  <section id="mision" class="card">
+    <h2>Misión</h2>
+    <p>“Ofrecer autos premium y vehículos comerciales de la más alta calidad manteniendo los valores de innovación, sostenibilidad y excelencia en todo lo que hacemos.”</p>
+  </section>
+
+  <section id="vision" class="card">
+    <h2>Visión</h2>
+    <p>“Ser la empresa automotriz líder a nivel mundial, reconocida por nuestra tecnología puntera, 
+      diseño excepcional y compromiso con la sostenibilidad. Aspiramos a dar forma al futuro de la movilidad.”</p>
+  </section>
+
+  <section id="pilares" class="card">
+    <h2>Pilares</h2>
+    <div class="pillars">
+      <article>
+        <h3 style="margin-top:0">Sostenibilidad</h3>
+        <p>Parte fundamental de la estrategia corporativa, con seis áreas: Medio Ambiente y Clima; Recursos y Circularidad; Derechos Humanos; Seguridad Vial; Confianza Digital; y Personas.</p>
+      </article>
+      <article>
+        <h3 style="margin-top:0">Integridad</h3>
+        <p>Bajo el “Integrity Code”, la compañía actúa con responsabilidad, transparencia, justicia y respeto en todas sus operaciones.</p>
+      </article>
+      <article>
+        <h3 style="margin-top:0">Diversidad</h3>
+        <p>Impulsa oportunidades iguales, cultura de respeto y reconocimiento de la individualidad como base del éxito sostenible.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="portafolio" class="card">
+    <h2>Mezcla de mercadeo · Portafolio de productos</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Categoría</th>
+            <th>Subfamilia / Servicio</th>
+            <th>Modelos</th>
+            <th>Precio (USD, aprox.)</th>
+            <th>Ventas 2023 (estim.)</th>
+            <th>Ventas 2024 (estim.)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Entry Cars</td>
+            <td>Compactos</td>
+            <td>A-Class</td>
+            <td>35,000</td>
+            <td>70,000</td>
+            <td>65,000</td>
+          </tr>
+          <tr>
+            <td>Core Cars</td>
+            <td>Sedán mediano</td>
+            <td>C-Class</td>
+            <td>48,000</td>
+            <td>300,000</td>
+            <td>285,000</td>
+          </tr>
+          <tr>
+            <td>Core Cars</td>
+            <td>Sedán ejecutivo</td>
+            <td>S-Class</td>
+            <td>64,000</td>
+            <td>200,000</td>
+            <td>195,000</td>
+          </tr>
+          <tr>
+            <td>Top-End Cars</td>
+            <td>Sedán lujo</td>
+            <td>S-Class</td>
+            <td>114,000</td>
+            <td>100,000</td>
+            <td>95,000</td>
+          </tr>
+          <tr>
+            <td>SUVs (Core)</td>
+            <td>SUV compacto</td>
+            <td>GLC</td>
+            <td>48,000</td>
+            <td>350,000</td>
+            <td>340,000</td>
+          </tr>
+          <tr>
+            <td>Core SUVs</td>
+            <td>SUV mediano</td>
+            <td>GLE</td>
+            <td>—</td>
+            <td>240,000</td>
+            <td>235,000</td>
+          </tr>
+          <tr>
+            <td>Core SUVs (Top-End)</td>
+            <td>SUV grande</td>
+            <td>GLS / Maybach GLS</td>
+            <td>85,000 – 180,000+</td>
+            <td>75,000</td>
+            <td>70,000</td>
+          </tr>
+          <tr>
+            <td>SUVs Iconic</td>
+            <td>Off-road</td>
+            <td>G-Class</td>
+            <td>148,000</td>
+            <td>45,000</td>
+            <td>50,000</td>
+          </tr>
+          <tr>
+            <td>BEV (EQ)</td>
+            <td>Sedán/SUV eléctricos</td>
+            <td>EQS, EQE, EQB</td>
+            <td>55,000 – 125,000</td>
+            <td>220,000</td>
+            <td>250,000</td>
+          </tr>
+          <tr>
+            <td>Vans</td>
+            <td>Comerciales</td>
+            <td>Sprinter, Vito, V-Class</td>
+            <td>45,000 – 60,000</td>
+            <td>445,000</td>
+            <td>405,000</td>
+          </tr>
+          <tr>
+            <td>Maybach</td>
+            <td>Ultra-lujo</td>
+            <td>Maybach S, Maybach EQS SUV</td>
+            <td>180,000+</td>
+            <td>25,000</td>
+            <td>28,000</td>
+          </tr>
+          <tr>
+            <td>AMG</td>
+            <td>Performance</td>
+            <td>AMG G63, AMG GLE, AMG GT, etc.</td>
+            <td>86,000+</td>
+            <td>145,000</td>
+            <td>150,000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Fuentes: Informe anual de ventas totales 2023–2024 (estimaciones académicas).</p>
+  </section>
+
+  <section id="necesidades" class="card">
+    <h2>Necesidades que cubre el producto</h2>
+    <ol>
+      <li><strong>Movilidad y transporte seguro</strong> (básica y funcional): permite trasladarse con seguridad, eficiencia y confiabilidad.</li>
+      <li><strong>Seguridad vial avanzada</strong> (prioritaria en automóviles premium): ADAS, frenado automático, control de carril y altos estándares en pruebas de choque.</li>
+      <li><strong>Prestigio y estatus social</strong> (psicológica y de reconocimiento): símbolo de lujo, diseño y poder adquisitivo.</li>
+      <li><strong>Confort y experiencia de manejo</strong> (emocional y funcional): interiores ergonómicos, materiales de alta calidad, insonorización, asientos con masaje, iluminación ambiental y conectividad premium.</li>
+      <li><strong>Innovación tecnológica</strong> (modernidad y vanguardia): vehículos eléctricos (EQ), híbridos e integración digital con MBUX e IA; conectividad con smartphones y sistemas de infoentretenimiento.</li>
+      <li><strong>Sostenibilidad y responsabilidad ambiental</strong> (emergente y estratégica): reducción de emisiones mediante motores híbridos y eléctricos; compromiso con movilidad verde y energías limpias.</li>
+      <li><strong>Exclusividad y personalización</strong> (autoexpresión): opciones de diseño personalizado, acabados exclusivos y ediciones limitadas.</li>
+    </ol>
+  </section>
+
+</main>
+
+<footer>
+  &copy; 2025 | Página elaborada para fines académicos.
+</footer>
+
+</body>
+</html>
